@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Josefin Sans';
+}
+body {
+    background-color: #ECF0F1;
+}
+input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.5rem;
+    padding: 10px 0px;
+    text-align: center;
+
+}
+button {
+    outline: none;
+    padding: 10px;
+    margin-left: 40px;
+
+    height: 50px;
+    width: 100px;
+    
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    color: #ffff;
+    background-color: #FF7F50;
+
+}
+button:hover {
+    background-color: #ed4d12;
+}
+button:focus {
+    background-color: #ed4d12;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.left-side {
+    display: grid;
+    place-content: center;
+}
+.left-side-container {
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 30px;
+    /* min-width: 400px; */
+    /* max-width: 400px; */
+    margin-top: 50%;
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin: 20% 0% 0% 0%;
+}
+.budget-info {
+    display: flex; 
+    justify-content: space-between;
+    margin: 1% 0%;
+}
+.add-item-area, .buget-setting-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-item-area {
+    margin-top: 20%;
+}
+#total-budget:focus{
+    border-bottom: 2px solid #6495ED;
+}
+#item-name, #item-price {
+    width: 140px;
+}
+#item-name:focus {
+    border-bottom: 2px solid #6495ED;
+}
+#item-price:focus{
+    border-bottom: 2px solid #6495ED;
+} 
+#item-price {
+    margin-left: 15px;
+}
+#total-budget-text, #remaning-budget-text {
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    background-color: #6495ED;
+}
+
+.right-side {
+    display: grid;
+    place-content: center;
+}
+
+/* a class that should be appplied on container*/
+.right-side-container {
+    background-color: #6495ED;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Class that should be applied on all element*/
+.element_applied {
+    margin: 0px 20px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
